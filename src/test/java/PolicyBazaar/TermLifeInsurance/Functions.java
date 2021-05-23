@@ -30,10 +30,16 @@ public class Functions {
 	public void fillBasicDetails(RemoteWebDriver driver, String gender, String name, String dob, String mobileNo) {
 		// Select Gender
 		// I located in browser but not able to interact through driver
-		
+		wait = new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='gender_female']/..")));
+		if(gender.equals("M")) {
+			driver.findElementByXPath("//*[@id='gender_male']/..").click();
+		}else {
+			driver.findElementByXPath("//*[@id='gender_female']/..").click();
+		}
 		// full name
 		// wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#nameAdd")));
-		wait = new WebDriverWait(driver, 10);
+		
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("nameAdd")));
 		WebElement fullName = driver.findElementById("nameAdd");
 		fullName.clear();
@@ -112,7 +118,7 @@ public class Functions {
 				driver.findElementByCssSelector("li[value='3']").click();
 				break;
 			case "10th Pass & below":
-				driver.findElementByCssSelector("xli[value='4']").click();
+				driver.findElementByCssSelector("li[value='4']").click();
 				break;
 			}
 			// maharashtra resident (Some time asked)
