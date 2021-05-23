@@ -30,7 +30,7 @@ public class Functions {
 	public void fillBasicDetails(RemoteWebDriver driver, String gender, String name, String dob, String mobileNo) {
 		// Select Gender
 		// I located in browser but not able to interact through driver
-
+		
 		// full name
 		// wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#nameAdd")));
 		wait = new WebDriverWait(driver, 10);

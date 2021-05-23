@@ -6,7 +6,7 @@
       <class name="PolicyBazaar.TermLifeInsurance.TestingTermLifeInsurance">
         <methods>
           <include name="init"/>
-          <include name="testTermLifeInsurance" invocation-numbers="1"/>
+          <include name="testTermLifeInsurance" invocation-numbers="0 1 2"/>
         </methods>
       </class> <!-- PolicyBazaar.TermLifeInsurance.TestingTermLifeInsurance -->
     </classes>
