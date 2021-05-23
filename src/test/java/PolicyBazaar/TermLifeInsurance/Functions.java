@@ -26,11 +26,12 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Functions {
 	WebDriverWait wait;
-	int ssCounter=0;
+	int ssCounter = 1;
+
 	public void fillBasicDetails(RemoteWebDriver driver, String gender, String name, String dob, String mobileNo) {
 		// Select Gender
 		// I located in browser but not able to interact through driver
-		
+
 		// full name
 		// wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#nameAdd")));
 		wait = new WebDriverWait(driver, 10);
@@ -51,7 +52,7 @@ public class Functions {
 
 	public void answerQuestionnaries(RemoteWebDriver driver, String smoker, String income, String occupation,
 			String education) {
-
+		
 		try {
 			// smoker
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("input[value=\"Yes\"]")));
@@ -115,7 +116,7 @@ public class Functions {
 				driver.findElementByCssSelector("xli[value='4']").click();
 				break;
 			}
-			// maharashtra resident
+			// maharashtra resident (Some time asked)
 			try {
 				wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("input[value='Yes']")));
 				driver.findElementByCssSelector("input[value='Yes']").click();
@@ -160,13 +161,12 @@ public class Functions {
 		try {
 			Thread.sleep(2000);
 		} catch (InterruptedException e1) {
-			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}
 		// take screenshot and close window
 		TakesScreenshot scrShot = ((TakesScreenshot) driver);
 		File SrcFile = scrShot.getScreenshotAs(OutputType.FILE);
-		File DestFile = new File(".\\ScreenShots\\"+Integer.toString(ssCounter++)+".png");
+		File DestFile = new File(".\\ScreenShots\\testCase" + Integer.toString(ssCounter++) + ".png");
 		try {
 			FileUtils.copyFile(SrcFile, DestFile);
 		} catch (IOException e) {
@@ -194,8 +194,7 @@ public class Functions {
 
 	public void enterAdditionalInfo(RemoteWebDriver driver, String emailID, String annualIncome, String Education,
 			String Occupation, String natureOfDuties, String city, String pinCode, String residentStatus) {
-		// wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("div#divAdditionalInfo
-		// .editData")));
+
 		driver.findElementByCssSelector("div#divAdditionalInfo .editData").click();
 		// enter email
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("txtEmail")));
@@ -236,27 +235,29 @@ public class Functions {
 	public void generateReport(String testID, String actualPreiumAmount, String expectdPreiumAmount) {
 		XSSFWorkbook workbook = new XSSFWorkbook();
 		XSSFSheet sheet = workbook.createSheet("Output");
-		
+
 		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd HH-mm-ss");
 		LocalDateTime now = LocalDateTime.now();
-		String folderName = "./Reports/"+dtf.format(now);
+		String folderName = "./Reports/" + dtf.format(now);
 		try {
 			Files.createDirectories(Paths.get(folderName));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		
+
+		// Header Row
 		XSSFRow row1 = sheet.createRow(0);
 		row1.createCell(0).setCellValue("testID");
 		row1.createCell(1).setCellValue("actualPremiumAmount");
 		row1.createCell(2).setCellValue("expectdPremiumAmount");
 		row1.createCell(3).setCellValue("Result");
-		
+
+		// Test case result row
 		XSSFRow row2 = sheet.createRow(1);
 		row2.createCell(0).setCellValue(testID);
 		row2.createCell(1).setCellValue(actualPreiumAmount);
 		row2.createCell(2).setCellValue(expectdPreiumAmount);
-		String result = actualPreiumAmount.equals(expectdPreiumAmount)?"Pass":"Fail";
+		String result = actualPreiumAmount.equals(expectdPreiumAmount) ? "Pass" : "Fail";
 		row2.createCell(3).setCellValue(result);
 
 		FileOutputStream file;
@@ -264,6 +265,7 @@ public class Functions {
 			file = new FileOutputStream(folderName + "/output.xlsx");
 			workbook.write(file);
 			file.close();
+			workbook.close();
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {

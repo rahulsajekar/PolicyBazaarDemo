@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-05-23T11:30:15 IST" name="Surefire suite" finished-at="2021-05-23T11:31:32 IST" duration-ms="77330">
+  <suite started-at="2021-05-23T15:48:19 IST" name="Surefire suite" finished-at="2021-05-23T15:50:04 IST" duration-ms="105207">
     <groups>
     </groups>
-    <test started-at="2021-05-23T11:30:15 IST" name="Surefire test" finished-at="2021-05-23T11:31:32 IST" duration-ms="77330">
+    <test started-at="2021-05-23T15:48:19 IST" name="Surefire test" finished-at="2021-05-23T15:50:04 IST" duration-ms="105207">
       <class name="PolicyBazaar.TermLifeInsurance.TestingTermLifeInsurance">
-        <test-method is-config="true" signature="init()[pri:0, instance:PolicyBazaar.TermLifeInsurance.TestingTermLifeInsurance@707194ba]" started-at="2021-05-23T11:30:15 IST" name="init" finished-at="2021-05-23T11:30:17 IST" duration-ms="2332" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:PolicyBazaar.TermLifeInsurance.TestingTermLifeInsurance@33c911a1]" started-at="2021-05-23T15:48:19 IST" name="init" finished-at="2021-05-23T15:48:21 IST" duration-ms="2289" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="testTermLifeInsurance(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:PolicyBazaar.TermLifeInsurance.TestingTermLifeInsurance@707194ba]" started-at="2021-05-23T11:30:18 IST" name="testTermLifeInsurance" data-provider="provideTestData" finished-at="2021-05-23T11:30:53 IST" duration-ms="34948" status="PASS">
+        <test-method signature="testTermLifeInsurance(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:PolicyBazaar.TermLifeInsurance.TestingTermLifeInsurance@33c911a1]" started-at="2021-05-23T15:48:22 IST" name="testTermLifeInsurance" data-provider="provideTestData" finished-at="2021-05-23T15:48:56 IST" duration-ms="34816" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -103,11 +103,16 @@
                 <![CDATA[Resident Indian]]>
               </value>
             </param>
+            <param index="18">
+              <value>
+                <![CDATA[1,016]]>
+              </value>
+            </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTermLifeInsurance -->
-        <test-method signature="testTermLifeInsurance(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:PolicyBazaar.TermLifeInsurance.TestingTermLifeInsurance@707194ba]" started-at="2021-05-23T11:30:53 IST" name="testTermLifeInsurance" data-provider="provideTestData" finished-at="2021-05-23T11:31:12 IST" duration-ms="19622" status="PASS">
+        <test-method signature="testTermLifeInsurance(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:PolicyBazaar.TermLifeInsurance.TestingTermLifeInsurance@33c911a1]" started-at="2021-05-23T15:48:56 IST" name="testTermLifeInsurance" data-provider="provideTestData" finished-at="2021-05-23T15:49:28 IST" duration-ms="31174" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -121,27 +126,27 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[Ram Pai]]>
+                <![CDATA[Vijay Kumar]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[30/08/1981]]>
+                <![CDATA[30/08/1990]]>
               </value>
             </param>
             <param index="4">
               <value>
-                <![CDATA[8383883838]]>
+                <![CDATA[8383883839]]>
               </value>
             </param>
             <param index="5">
               <value>
-                <![CDATA[NO]]>
+                <![CDATA[Yes]]>
               </value>
             </param>
             <param index="6">
               <value>
-                <![CDATA[15 Lac +]]>
+                <![CDATA[7 Lac to 9.9 Lac]]>
               </value>
             </param>
             <param index="7">
@@ -199,11 +204,16 @@
                 <![CDATA[Resident Indian]]>
               </value>
             </param>
+            <param index="18">
+              <value>
+                <![CDATA[1,418]]>
+              </value>
+            </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTermLifeInsurance -->
-        <test-method signature="testTermLifeInsurance(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:PolicyBazaar.TermLifeInsurance.TestingTermLifeInsurance@707194ba]" started-at="2021-05-23T11:31:12 IST" name="testTermLifeInsurance" data-provider="provideTestData" finished-at="2021-05-23T11:31:32 IST" duration-ms="19787" status="PASS">
+        <test-method signature="testTermLifeInsurance(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:PolicyBazaar.TermLifeInsurance.TestingTermLifeInsurance@33c911a1]" started-at="2021-05-23T15:49:28 IST" name="testTermLifeInsurance" data-provider="provideTestData" finished-at="2021-05-23T15:50:04 IST" duration-ms="36264" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -217,37 +227,37 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[Ram Pai]]>
+                <![CDATA[Sham Kumar]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[30/08/1981]]>
+                <![CDATA[09/09/1980]]>
               </value>
             </param>
             <param index="4">
               <value>
-                <![CDATA[8383883838]]>
+                <![CDATA[9.87654123E9]]>
               </value>
             </param>
             <param index="5">
               <value>
-                <![CDATA[NO]]>
+                <![CDATA[Yes]]>
               </value>
             </param>
             <param index="6">
               <value>
-                <![CDATA[15 Lac +]]>
+                <![CDATA[10 Lac to 14.9 Lac]]>
               </value>
             </param>
             <param index="7">
               <value>
-                <![CDATA[Self Employed]]>
+                <![CDATA[Salaried]]>
               </value>
             </param>
             <param index="8">
               <value>
-                <![CDATA[12th Pass]]>
+                <![CDATA[College graduate & above]]>
               </value>
             </param>
             <param index="9">
@@ -293,6 +303,11 @@
             <param index="17">
               <value>
                 <![CDATA[Resident Indian]]>
+              </value>
+            </param>
+            <param index="18">
+              <value>
+                <![CDATA[1,830]]>
               </value>
             </param>
           </params>
