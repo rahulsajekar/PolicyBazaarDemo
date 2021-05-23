@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-05-23T15:37:29 IST" name="Default suite" finished-at="2021-05-23T15:39:14 IST" duration-ms="104970">
+  <suite started-at="2021-05-23T16:00:07 IST" name="Default suite" finished-at="2021-05-23T16:01:54 IST" duration-ms="107361">
     <groups>
     </groups>
-    <test started-at="2021-05-23T15:37:29 IST" name="Default test" finished-at="2021-05-23T15:39:14 IST" duration-ms="104970">
+    <test started-at="2021-05-23T16:00:07 IST" name="Default test" finished-at="2021-05-23T16:01:54 IST" duration-ms="107361">
       <class name="PolicyBazaar.TermLifeInsurance.TestingTermLifeInsurance">
-        <test-method is-config="true" signature="init()[pri:0, instance:PolicyBazaar.TermLifeInsurance.TestingTermLifeInsurance@ffaa6af]" started-at="2021-05-23T15:37:29 IST" name="init" finished-at="2021-05-23T15:37:31 IST" duration-ms="2321" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:PolicyBazaar.TermLifeInsurance.TestingTermLifeInsurance@ffaa6af]" started-at="2021-05-23T16:00:07 IST" name="init" finished-at="2021-05-23T16:00:09 IST" duration-ms="2211" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="testTermLifeInsurance(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:PolicyBazaar.TermLifeInsurance.TestingTermLifeInsurance@ffaa6af]" started-at="2021-05-23T15:37:32 IST" name="testTermLifeInsurance" data-provider="provideTestData" finished-at="2021-05-23T15:38:06 IST" duration-ms="34808" status="PASS">
+        <test-method signature="testTermLifeInsurance(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:PolicyBazaar.TermLifeInsurance.TestingTermLifeInsurance@ffaa6af]" started-at="2021-05-23T16:00:10 IST" name="testTermLifeInsurance" data-provider="provideTestData" finished-at="2021-05-23T16:00:45 IST" duration-ms="35571" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -112,7 +112,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTermLifeInsurance -->
-        <test-method signature="testTermLifeInsurance(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:PolicyBazaar.TermLifeInsurance.TestingTermLifeInsurance@ffaa6af]" started-at="2021-05-23T15:38:06 IST" name="testTermLifeInsurance" data-provider="provideTestData" finished-at="2021-05-23T15:38:40 IST" duration-ms="33134" status="PASS">
+        <test-method signature="testTermLifeInsurance(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:PolicyBazaar.TermLifeInsurance.TestingTermLifeInsurance@ffaa6af]" started-at="2021-05-23T16:00:45 IST" name="testTermLifeInsurance" data-provider="provideTestData" finished-at="2021-05-23T16:01:19 IST" duration-ms="33359" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -213,7 +213,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTermLifeInsurance -->
-        <test-method signature="testTermLifeInsurance(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:PolicyBazaar.TermLifeInsurance.TestingTermLifeInsurance@ffaa6af]" started-at="2021-05-23T15:38:40 IST" name="testTermLifeInsurance" data-provider="provideTestData" finished-at="2021-05-23T15:39:14 IST" duration-ms="34074" status="PASS">
+        <test-method signature="testTermLifeInsurance(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:PolicyBazaar.TermLifeInsurance.TestingTermLifeInsurance@ffaa6af]" started-at="2021-05-23T16:01:19 IST" name="testTermLifeInsurance" data-provider="provideTestData" finished-at="2021-05-23T16:01:54 IST" duration-ms="35606" status="PASS">
           <params>
             <param index="0">
               <value>

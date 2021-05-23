@@ -26,7 +26,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Functions {
 	WebDriverWait wait;
-	int ssCounter = 1;
 
 	public void fillBasicDetails(RemoteWebDriver driver, String gender, String name, String dob, String mobileNo) {
 		// Select Gender
@@ -148,7 +147,7 @@ public class Functions {
 		driver.findElementByCssSelector("[class='productHeadRight'] a").click();
 	}
 
-	public void takeScreenshot(RemoteWebDriver driver) {
+	public void takeScreenshot(RemoteWebDriver driver,String testID) {
 		String mainWindowHandle = driver.getWindowHandle();
 		Set<String> handles = driver.getWindowHandles();
 		for (String handle : handles) {
@@ -166,7 +165,7 @@ public class Functions {
 		// take screenshot and close window
 		TakesScreenshot scrShot = ((TakesScreenshot) driver);
 		File SrcFile = scrShot.getScreenshotAs(OutputType.FILE);
-		File DestFile = new File(".\\ScreenShots\\testCase" + Integer.toString(ssCounter++) + ".png");
+		File DestFile = new File(".\\ScreenShots\\" + testID+ ".png");
 		try {
 			FileUtils.copyFile(SrcFile, DestFile);
 		} catch (IOException e) {

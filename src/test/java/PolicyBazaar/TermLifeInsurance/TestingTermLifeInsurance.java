@@ -61,7 +61,7 @@ public class TestingTermLifeInsurance {
 		f.selectAgionITermAndDownloadBrochure(driver);
 
 		// 9) Capture ScreenShot and close window
-		f.takeScreenshot(driver);
+		f.takeScreenshot(driver,testID);
 
 		// 10) Select plan type based on test data provided
 		f.selectPlanType(driver, productType);
