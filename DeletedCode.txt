@@ -1,0 +1,130 @@
+	/*
+	 * @Test(dataProvider = "basicDetails", priority = 1) private void
+	 * fillBasicDetails(String gender, String name, String dob, String mobileNo) {
+	 * // Select Gender // yet to implement // full name WebElement fullName =
+	 * driver.findElementById("nameAdd");
+	 * wait.until(ExpectedConditions.visibilityOf(fullName));
+	 * fullName.sendKeys(name);
+	 * 
+	 * // date of birth driver.findElementById("dob").sendKeys(dob);
+	 * 
+	 * // mobile number driver.findElementById("mobileNo").sendKeys(mobileNo);
+	 * 
+	 * // click on view free quotes driver.findElementById("submitButton").click();
+	 * }
+	 */
+
+	/*
+	 * @Test(priority = 2, dataProvider = "answers") public void
+	 * answerQuestionnaries(String smoker, String income, String occupation, String
+	 * education) { // smoker
+	 * wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(
+	 * "input[value=\"Yes\"]"))); if (smoker.equals("Yes")) {
+	 * driver.findElementByCssSelector("input[value=\"Yes\"]").click(); } else {
+	 * driver.findElementByCssSelector("input[value=\"No\"]").click(); } // income
+	 * wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(
+	 * "[class=\"radio_ul\"]"))); switch (income) { case "15 Lac + ":
+	 * driver.findElementByCssSelector("li[value='6']").click(); break; case
+	 * "10 Lac to 14.9 Lac ":
+	 * driver.findElementByCssSelector("li[value='5']").click(); break; case
+	 * "7 Lac to 9.9 Lac ":
+	 * driver.findElementByCssSelector("li[value='4']").click(); break; case
+	 * "5 Lac to 6.9 Lac ":
+	 * driver.findElementByCssSelector("li[value='3']").click(); break; case
+	 * "3 Lac to 4.9 Lac ":
+	 * driver.findElementByCssSelector("li[value='2']").click(); break; case
+	 * "2 Lac to 2.9 Lac ":
+	 * driver.findElementByCssSelector("li[value='8']").click(); break; case
+	 * "Less than 2 Lac ": driver.findElementByCssSelector("li[value='7']").click();
+	 * break; }
+	 * 
+	 * // Occupation
+	 * wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(
+	 * "[class=\"btns-grp\"]"))); if (occupation.equals("Salaried")) {
+	 * driver.findElementByCssSelector("input[value='Salaried']").click(); } else {
+	 * driver.findElementByCssSelector("input[value='Self Employed']").click(); }
+	 * 
+	 * // qualification
+	 * wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(
+	 * "li[value='1']"))); switch (education) { case "College graduate & above ":
+	 * driver.findElementByCssSelector("li[value='1']").click(); break; case
+	 * "12th Pass ": driver.findElementByCssSelector("li[value='3']").click();
+	 * break; case "10th Pass & below ":
+	 * driver.findElementByCssSelector("xli[value='4']").click(); break; } }
+	 */
+	/*
+	 * @Test(priority = 3) public void closeChatBot() {
+	 * wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(
+	 * "rocketchat-iframe"))); driver.switchTo().frame("rocketchat-iframe");
+	 * wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(
+	 * "[class='close-btn']")));
+	 * driver.findElementByCssSelector("[class='close-btn']").click();
+	 * driver.switchTo().parentFrame(); }
+	 */
+
+	/*
+	 * @Test(priority = 4) public void selectAgionITermAndDownloadBrochure() {
+	 * driver.findElementByCssSelector("[planid='969'] button").click();
+	 * wait.until(ExpectedConditions.visibilityOfElementLocated(By.
+	 * cssSelector("[class='productHeadRight'] a")));
+	 * driver.findElementByCssSelector("[class='productHeadRight'] a").click(); }
+	 */
+
+	/*
+	 * @Test(priority = 5) public void takeScreenshot() { String handle =
+	 * driver.getWindowHandle(); Set<String> handles = driver.getWindowHandles();
+	 * for (String h : handles) { if (!h.equals(handle)) {
+	 * driver.switchTo().window(h); break; } } // take screenshot and close window
+	 * TakesScreenshot scrShot = ((TakesScreenshot) driver); File SrcFile =
+	 * scrShot.getScreenshotAs(OutputType.FILE); File DestFile = new
+	 * File(".\\Resources\\ss.png"); try { FileUtils.copyFile(SrcFile, DestFile); }
+	 * catch (IOException e) { e.printStackTrace(); }
+	 * 
+	 * driver.close(); driver.switchTo().window(handle); }
+	 */
+	
+	/*
+	 * @Test(priority = 6) public void selectPlanType() { String planType =
+	 * "Life Protect";
+	 * wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(
+	 * "[class='productList']"))); switch (planType) { case "Life Protect":
+	 * driver.findElementById("lifeID").click(); break; case "Protect Plus":
+	 * driver.findElementById("lifePlusID").click(); break; case "Dual Protect":
+	 * driver.findElementById("lifeHealthID").click(); break; } }
+	 */
+	
+	/*
+	 * @Test(priority = 7) public void enterAdditionalInfo() {
+	 * //wait.until(ExpectedConditions.visibilityOfElementLocated(By.
+	 * cssSelector("div#divAdditionalInfo .editData")));
+	 * driver.findElementByCssSelector("div#divAdditionalInfo .editData").click();
+	 * // enter email driver.findElementById("txtEmail").sendKeys("abcd@gmail.com");
+	 * // annual income
+	 * driver.findElementById("txtAnnualIncome").sendKeys("1500000"); //education
+	 * WebElement education = driver.findElementById("ddlEducation"); Select
+	 * dropDown = new Select(education);
+	 * dropDown.selectByVisibleText("Post graduate");
+	 * 
+	 * // occupation WebElement occupation =
+	 * driver.findElementById("ddlOccupation"); dropDown = new Select(occupation);
+	 * dropDown.selectByVisibleText("Salaried");
+	 * 
+	 * // nature of duty WebElement duty =
+	 * driver.findElementById("ddlNatureOfDuties"); dropDown = new Select(duty);
+	 * dropDown.selectByVisibleText("Office work/Desk Job/ Indoor work");
+	 * 
+	 * // city driver.findElementById("txtCity").sendKeys("Mumbai");
+	 * wait.until(ExpectedConditions.visibilityOfElementLocated(By.
+	 * cssSelector("#ui-id-1 a")));
+	 * driver.findElementByCssSelector("#ui-id-1 a").click();
+	 * 
+	 * // pin driver.findElementById("txtPincode").sendKeys("401105"); }
+	 */
+	
+	/*
+	 * @Test(priority = 8) public void fetchAndValidatePremiumAmount() { String
+	 * actualPreiumAmount = driver.findElementById("spnPremium").getText(); String
+	 * expectdPreiumAmount = "968"; Assert.assertEquals(actualPreiumAmount,
+	 * expectdPreiumAmount); }
+	 */
+	
